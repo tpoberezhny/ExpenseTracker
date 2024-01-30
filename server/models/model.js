@@ -10,7 +10,7 @@ const categories_model = new Schema({
 const transaction_model = new Schema({
   name: { type: String, default: "Anonymous" },
   type: { type: String, default: "Продукты" },
-  amount: { type: Number },
+  amount: { type: Number, default: 1000 },
   date: { type: Date, default: Date.now },
 });
 
